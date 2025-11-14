@@ -1,0 +1,22 @@
+<h5>Criar ou editar Jobro</h5>
+
+<div class="col s12">
+    <div class="row">
+        <div class="input-field col s12">
+            <input disabled (input)="aoTeclarNendo()" [(ngModel)]="nendo.id" id="disabled" type="text">
+            <label for="disabled" class="active">#</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            <input id="nome" (input)="aoTeclarNendo()" [(ngModel)]="nendo.franquia" class="validate">
+            <label for="nome" class="active">Franquia</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            <input id="email" (input)="aoTeclarNendo()" [(ngModel)]="nendo.persona" class="validate">
+            <label for="email" class="active">Personagem</label>
+        </div>
+    </div>
+</div>
