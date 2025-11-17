@@ -1,0 +1,20 @@
+<h2>Lista de Nendoroids</h2>
+
+<div class="row">
+    <div class="col s6">
+        <h2>Lista de alunos</h2>
+        <div class="collection">
+            <a
+            *ngFor="let nendo of nendoroids"
+            class="collection-item"
+            [routerLink]="[nendo.id]"
+            >{{nendo.persona}}
+            </a>
+        </div>
+    </div>
+    <div class="col s6">
+        <router-outlet></router-outlet>
+    </div>      
+</div>
+
+

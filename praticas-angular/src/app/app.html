@@ -1,0 +1,22 @@
+<nav  *ngIf="mostrarMenu">
+    <div class="nav-wrapper">
+      <a routerLink="" class="brand-logo right">Logo</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a routerLink="/jojo" [queryParams]="{page:1}">Jojos</a></li>
+        <!-- <li><a routerLink="jobro" [queryParams]="{page:1}">Jobros</a></li> -->
+        <li><a routerLink="/nendo">Nendoroids</a></li>
+        <li><a routerLink="/jojoLogin">Login</a></li>
+        <!-- <li><a routerLink="/nendoLogin">Login</a></li> -->
+        <!-- <li><a routerLink="/login">Login</a></li>          -->
+        <!-- <li><a routerLink="/cursos" [queryParams]="{page:1}">Cursos</a></li> -->
+        <!-- <li><a routerLink="/aluno" [queryParams]="{page:1}">Alunos</a></li> -->
+      </ul>
+    </div>
+  </nav>
+  <h1>Práticas de Angular</h1>
+
+  <div class="container">
+     <router-outlet></router-outlet>
+  </div>
+
+ 
